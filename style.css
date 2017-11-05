@@ -425,7 +425,7 @@ blockquote p:last-of-type {
 	content: ''
 }
 
-#siderbar {
+#sidebar {
 	width: 24%;
 	float: right;
 	padding-top: 40px
@@ -438,8 +438,32 @@ blockquote p:last-of-type {
 	border-bottom: 1px solid #ddd
 }
 
+.screen-reader-text {
+	display: none !important
+}
+
+#s {
+	width: 70%
+}
+
+#searchsubmit {
+
+	
+    padding: 5px 10px;
+    text-transform: uppercase;
+    color: #666;
+	background-color: #f2f2f2;
+	border: 1px solid #f0f0f0;
+    border-radius: 2px;
+}
+
+
+.widget+.widget {
+	margin-top: 20px !important
+}
+
 @media only screen and (max-width:750px) {
-	#siderbar {
+	#sidebar {
 		display: none
 	}
 }
@@ -470,7 +494,15 @@ blockquote p:last-of-type {
 
 .post-time {
 	display: block;
-	color: #aaa
+	color: #aaa !important
+}
+
+.post-time a{
+	color: #aaa !important
+}
+
+.post-time a:hover{
+	color: #666 !important
 }
 
 .post-excerpt {
@@ -619,9 +651,9 @@ code,pre {
 	content: ' '
 }
 
-.friends a,.tags>a {
+.friends a,.tagcloud>a {
 	display: inline-block;
-	font-size: 13px
+	font-size: 13px !important
 }
 
 .highlight figcaption:after {
@@ -673,7 +705,7 @@ pre .javascript .function,pre .keyword {
 	color: #777
 }
 
-.tags>a {
+.tagcloud>a {
 	margin: 2px 5px 5px 0;
 	padding: 5px 10px;
 	text-transform: uppercase;
@@ -683,7 +715,7 @@ pre .javascript .function,pre .keyword {
 	background: #f2f2f2
 }
 
-.tags>a:hover {
+.tagcloud>a:hover {
 	background: #eee
 }
 

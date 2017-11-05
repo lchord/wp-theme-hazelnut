@@ -1,10 +1,12 @@
-<article class="block block--inset block--list<?php if(is_sticky()) echo ' sticky';?>">
-    <h2 class="block-title post-featured" itemprop="headline">
+<article class="post block block--inset block--list<?php if(is_sticky()) echo ' sticky';?>">
+    <header class="post-header">
+    <h2 class="post-title block-title post-featured" itemprop="headline">
         <a href="<?php the_permalink();?>"><?php the_title();?></a>
     </h2>
-    <div class="block-postMetaWrap u-textAlignCenter">
-        <time><?php echo get_the_date('Y/m/d');?></time> | <span><?php the_category(',');?></span> | <span><?php echo get_comments_number();?><?php echo __( 'replies', 'puma' );?></span>
+    <div class="block-postMetaWrap u-textAlignCenter post-time">
+        <time><?php echo get_the_date('Y.m.d');?></time> | <span><?php the_category(',');?></span> | <span><?php echo get_comments_number();?><?php echo __( '回复', 'hazelnut' );?></span>
     </div>
+    </header>
     <div class="block-snippet block-snippet--subtitle grap" itemprop="about">
         <?php if(has_post_thumbnail()):?>
             <p class="with-img"><?php the_post_thumbnail( 'full' ); ?></p>

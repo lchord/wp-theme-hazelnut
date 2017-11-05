@@ -34,7 +34,7 @@ get_header(); ?>
         </div>
     </main>
 
-
+    <?php get_sidebar(); ?>
 
 
 <?php wp_footer();?>
