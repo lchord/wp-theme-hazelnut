@@ -4,7 +4,7 @@
         <a href="<?php the_permalink();?>"><?php the_title();?></a>
     </h2>
     <div class="block-postMetaWrap u-textAlignCenter post-time">
-        <time><?php echo get_the_date('Y.m.d');?></time> | <span><?php the_category(',');?></span> | <span><?php echo get_comments_number();?><?php echo __( '回复', 'hazelnut' );?></span>
+        <time><?php echo date('M jS Y',get_the_time('U'));?></time>
     </div>
     </header>
     <div class="block-snippet block-snippet--subtitle grap" itemprop="about">

@@ -8,9 +8,9 @@ Template: runway-framework
 Version: 0.1
 
 */
-
 a,body {
-	color: #333
+	color: #333;
+	outline: none
 }
 
 abbr[title],dfn[title] {
@@ -443,18 +443,15 @@ blockquote p:last-of-type {
 }
 
 #s {
-	width: 70%
+	width: 100%;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	outline-color: #666;
+	outline-width: .2px
 }
 
 #searchsubmit {
-
-	
-    padding: 5px 10px;
-    text-transform: uppercase;
-    color: #666;
-	background-color: #f2f2f2;
-	border: 1px solid #f0f0f0;
-    border-radius: 2px;
+	display: none !important
 }
 
 
