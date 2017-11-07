@@ -29,7 +29,7 @@
       'echo' => false,  
       'items_wrap' => '%3$s',  
       'depth' => 0,  
-      'theme_location'=>'菜单值',  
+      'theme_location'=>'primary',  
       );  
       echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );  
     ?>  
