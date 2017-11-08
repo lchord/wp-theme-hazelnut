@@ -3,8 +3,8 @@
     <h2 class="post-title block-title post-featured" itemprop="headline">
         <a href="<?php the_permalink();?>"><?php the_title();?></a>
     </h2>
-    <div class="block-postMetaWrap u-textAlignCenter post-time">
-        <time><?php echo date('M jS Y',get_the_time('U'));?></time>
+    <div class=" post-time">
+        <time><?php echo date('M j Y',get_the_time('U'));?></time>
     </div>
     </header>
     <div class="block-snippet block-snippet--subtitle grap" itemprop="about">
@@ -18,10 +18,10 @@
                 <?php else: ?>
                     <p><?php echo mb_strimwidth(strip_shortcodes(strip_tags(apply_filters('the_content', $post->post_content))), 0, 220,"...");?></p>
                 <?php endif;?>
-                <p><a class="more-link" href="<?php the_permalink();?>" rel="nofollow">Read More.</a></p>
+                <p><a class="more-link" href="<?php the_permalink();?>" rel="nofollow">Read More</a></p>
             <?php endif;?>
         <?php else : ?>
-            <?php the_content('Read More.');?>
+            <?php the_content('Read More');?>
         <?php endif;?>
     </div>
     

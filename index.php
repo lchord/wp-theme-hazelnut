@@ -23,7 +23,7 @@ get_header(); ?>
                 endwhile;
             endif;?>
         </section>
-        <div class="u-textAlignCenter postsFooterNav">
+        <div class="postsFooterNav">
             <div class="posts-nav">
                 <?php echo paginate_links( array(
                     'prev_next'          => 0,
@@ -33,6 +33,6 @@ get_header(); ?>
             </div>
         </div>
     </main>
-
     <?php get_sidebar(); ?>
-<?php wp_footer();?>
+</section>
+    <?php get_footer(); ?>

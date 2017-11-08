@@ -41,7 +41,7 @@ button,img,input:not([type=radio]):not([type=checkbox]),select {
 	position: relative
 }
 
-#footer,#header-warp,#logo>a,svg:not(:root) {
+#footer,#header-warp,svg:not(:root) {
 	overflow: hidden
 }
 
@@ -211,7 +211,7 @@ html {
 }
 
 body {
-	font-family: 'Microsoft Jhenghei','PingFang SC',"Hiragino Sans GB",'Microsoft YaHei',sans-serif;
+	font-family: 'Raleway','Microsoft Jhenghei','PingFang SC',"Hiragino Sans GB",'Microsoft YaHei',sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.6;
@@ -353,13 +353,9 @@ blockquote p:last-of-type {
 
 #logo>a {
 	display: block;
-	width: 150px;
 	white-space: nowrap;
-	text-indent: 110%;
-	font-size: 22px;
+	font-size: 25px;
 	color: #444;
-	background: url(./source/img/yuusan.svg) left center no-repeat;
-	background-size: 100%;
 }
 
 #nav a,#nav a::after {
@@ -453,6 +449,28 @@ blockquote p:last-of-type {
 #searchsubmit {
 	display: none !important
 }
+
+#searchform input {
+	padding: 4px
+}
+
+
+#searchform ::-webkit-input-placeholder {
+	color: #aaa
+} /* Chrome/Opera/Safari */
+
+#searchsubmit :-moz-placeholder 
+{
+	color: #aaa
+} /* Firefox 19+ */
+	
+#searchsubmit :-ms-input-placeholder {
+	color: #aaa
+} /* IE 10+ */
+	
+#searchsubmit ::-moz-placeholder {
+	color: #aaa
+} /* Firefox 18- */
 
 
 .widget+.widget {
