@@ -931,8 +931,8 @@ pre .javascript .function,pre .keyword {
 }
 
 .form-submit .submit {
-	border: 2px solid #27ae60;
-	color: #27ae60;
+	border: 2px solid #666;
+	color: #666;
 	background-color: #fff;
 	display: inline-block;
 	padding: 3px 15px;
@@ -942,7 +942,7 @@ pre .javascript .function,pre .keyword {
 }
 
 .form-submit .submit:hover {
-	background-color: #27ae60;
+	background-color: #666;
 	color: #fff
 }
 
