@@ -472,7 +472,7 @@ blockquote p:last-of-type {
 
 
 .widget+.widget {
-	margin-top: 20px !important
+	margin: 20px 0 !important
 }
 
 .tag-link-count {
@@ -613,7 +613,8 @@ blockquote p:last-of-type {
 	margin: 30px auto 0;
 	padding: 20px 0;
 	border-top: 1px solid #e1e1e1;
-	font-size: 15px
+	font-size: 15px;
+	clear: both
 }
 
 .highlight {
@@ -870,7 +871,9 @@ pre .javascript .function,pre .keyword {
 .comment-meta a{
 	color: rgba(0,0,0,.5);
 }
-
+.comment-author {
+	font-style: normal
+}
 .comment-content {
 	margin-top: 10px
 }
@@ -883,7 +886,7 @@ pre .javascript .function,pre .keyword {
 
 .admin-tag {
 	background-color: #999;
-	color: #fff;
+	color: #fff !important;
 	font-size: 12px;
 	padding: 1px 1px;
 	vertical-align: middle;
