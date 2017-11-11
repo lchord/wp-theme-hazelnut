@@ -1013,3 +1013,28 @@ pre .javascript .function,pre .keyword {
 	display: block
 }
 
+.posts-nav { 
+	font-size: 14px;
+	color:rgba(0,0,0,0.44);
+	padding:10px 0
+}
+.posts-nav .page-numbers {
+	border-radius: 3px;
+	border:1px solid rgba(0, 0, 0, 0.15);
+	display: inline-block;
+    text-align: center;
+	width: 30px;
+	line-height:30px;
+	margin:0 5px;
+}
+
+.posts-nav .page-numbers.current,
+.posts-nav .page-numbers:not(.dots):hover {
+	background: #666;
+	border-color: #666;
+	color:#fff;
+}
+.posts-nav .page-numbers.dots {
+	border-color:rgba(0,0,0,0)
+}
+

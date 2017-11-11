@@ -23,11 +23,13 @@ get_header(); ?>
                 endwhile;
             endif;?>
         </section>
-        <div class="postsFooterNav">
+        <div class="footer-nav">
             <div class="posts-nav">
                 <?php echo paginate_links( array(
-                    'prev_next'          => 0,
+                    'prev_next'          => 1,
                     'before_page_number' => '',
+                    'prev_text'    => __('«'),
+                    'next_text'    => __('»'),
                     'mid_size' => 2
                 ) );?>
             </div>
