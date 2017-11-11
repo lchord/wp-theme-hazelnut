@@ -1,8 +1,20 @@
 <?php
 
+if ( ! function_exists( 'hazelnut_setup' ) ) :
+    function hazelnut_setup() {
+        add_theme_support( 'title-tag' );
+        add_theme_support( 'html5', array(
+            'search-form',
+            'comment-form',
+            'comment-list',
+        ) );
+    }
+    endif;
+    add_action( 'after_setup_theme', 'hazelnut_setup' );
+
 if (function_exists('register_nav_menus')){
 	register_nav_menus(array(
-	//主键key调用nav时使用，值value为后台菜单显示名称
+	//key调用nav时，value为菜单名称
 	'primary' => 'Primary Navigation'
 	));    
     }
@@ -26,4 +38,9 @@ function hazelnut_admin_tag($author_link){
     }		
 }		
 add_filter('get_comment_author_link', 'hazelnut_admin_tag');    
+
+function hazelnut_javascript_detection() {
+	echo "<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>\n";
+}
+add_action( 'wp_head', 'hazelnut_javascript_detection', 0 );
 ?>
