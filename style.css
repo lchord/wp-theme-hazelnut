@@ -1,6 +1,6 @@
 /*
 Theme Name: hazelnut
-Theme URI: https://yuusan.xyz
+Theme URI: https://github.com/lchord/hazelnut
 Description: 
 Author: Yuusan
 Author URI: https://yuusan.xyz
@@ -810,6 +810,9 @@ pre .javascript .function,pre .keyword {
 .widget ul {
 	list-style: none
 }
+#comment input, #comment textarea{
+	outline: none
+}
 .commentlist li {
 	list-style: none
 }
@@ -845,7 +848,7 @@ pre .javascript .function,pre .keyword {
 }
 
 .commentlist .depth-2 .children {
-	margin-left: 0
+	margin-left: 50px
 }
 
 .comment-body {
@@ -868,7 +871,7 @@ pre .javascript .function,pre .keyword {
 
 .reply {
 	position: absolute;
-	top: 20px;
+	top: 0;
 	right: 0
 }
 
@@ -936,7 +939,7 @@ pre .javascript .function,pre .keyword {
 }
 
 .form-submit .submit {
-	border: 2px solid #666;
+	border: 1px solid rgba(0,0,0,.15);
 	color: #666;
 	background-color: #fff;
 	display: inline-block;
