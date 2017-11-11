@@ -26,4 +26,19 @@ function hazelnut_admin_tag($author_link){
     }
 }
 add_filter('get_comment_author_link', 'hazelnut_admin_tag');
+
+function sticky_icon($title)
+{
+    global $post;
+    $title_icon_sticky=get_bloginfo('template_directory').'/source/img/sticky-top.svg';
+    $sticky = get_option('sticky_posts');
+    if($sticky)
+    {
+    $title=in_array($post->ID,$sticky)?'<img src="'.$title_icon_sticky.'" height="20" width="20"/>'.$title:$title;
+    }
+    return $title;
+}
+add_filter('the_title','sticky_icon',999);
+
+
 ?>
