@@ -1,7 +1,11 @@
 <article class="post block block--inset block--list<?php if(is_sticky()) echo ' sticky';?>">
     <header class="post-header">
     <h2 class="post-title block-title post-featured" itemprop="headline">
-        <a href="<?php the_permalink();?>"><?php the_title();?></a>
+        <?php if( is_sticky()) : ?>
+            <img src="<?php echo(get_bloginfo('template_directory').'/source/img/sticky-top.svg') ?>" height="20" width="20"/><a href="<?php the_permalink();?>"><?php the_title();?></a>
+        <?php else : ?>
+            <a href="<?php the_permalink();?>"><?php the_title();?></a>
+        <?php endif;?>
     </h2>
     <div class=" post-time">
         <time><?php echo date('M j Y',get_the_time('U'));?></time>
