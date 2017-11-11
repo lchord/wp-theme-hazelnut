@@ -16,7 +16,7 @@ get_header(); ?>
 
 <section id="content">
     <main id="main" class="home">
-        <section class="blockGroup">
+        <section class="block-group">
             <?php if (have_posts()):
                 while (have_posts()): the_post();
                     get_template_part('template-parts/content', get_post_format());
