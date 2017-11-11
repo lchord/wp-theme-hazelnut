@@ -2,7 +2,7 @@
     <header class="post-header">
     <h2 class="post-title block-title post-featured" itemprop="headline">
         <?php if( is_sticky()) : ?>
-            <img src="<?php echo(get_bloginfo('template_directory').'/source/img/sticky-top.svg') ?>" height="20" width="20"/><a href="<?php the_permalink();?>"><?php the_title();?></a>
+            <img src="<?php echo(get_bloginfo('template_directory').'/source/img/sticky-top.svg') ?>" class="sticky-icon"/><a href="<?php the_permalink();?>"><?php the_title();?></a>
         <?php else : ?>
             <a href="<?php the_permalink();?>"><?php the_title();?></a>
         <?php endif;?>
