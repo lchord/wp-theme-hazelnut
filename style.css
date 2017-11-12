@@ -440,8 +440,14 @@ blockquote p:last-of-type {
 	width: 100%;
 	border: 1px solid #ddd;
 	border-radius: 2px;
-	outline-color: #666;
-	outline-width: .2px
+	outline: none
+}
+.no-result {
+	text-align: center
+}
+.no-result form{
+	width: 60%;
+	margin: auto
 }
 
 #searchsubmit {
@@ -483,6 +489,9 @@ blockquote p:last-of-type {
 @media only screen and (max-width:750px) {
 	#sidebar {
 		display: none
+	}
+	.no-result form{
+		width: 90% !important;
 	}
 }
 
@@ -1066,4 +1075,12 @@ pre .javascript .function,pre .keyword {
 p, .archive-content, .post-title, #comment{
 	word-wrap:break-word
 }
+
+.search #footer, .error404 #footer {
+	position: fixed;
+	left:0;
+	right:0;
+	bottom: 0px
+}
+
 
