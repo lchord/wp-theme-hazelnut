@@ -8,7 +8,7 @@ Still under construction.
 
 
 Todo:  
-- [ ] Search result page  
+- [x] Search result page  
 - [x] Archive template  
-- [ ] Page template  
+- [x] Page template  
 - [ ] ...
