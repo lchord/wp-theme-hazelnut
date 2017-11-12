@@ -1,8 +1,11 @@
 <?php get_header();?>
-	<main class="main">
+	<main id="main">
 	<div class="not-found">
-        <b>404</b>
-        <p>没找到任何内容，返回<a href="<?php echo home_url();?>">首页</a></p>
+        <header class="head-404">
+	<h1>404 Not Found</h1>
+	</header>
+	<p>There is nothing here.</p>
+	<p><big><u><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></u></big></p>
 	</div>
 	</main>
 <?php get_footer();?>

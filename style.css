@@ -1,5 +1,5 @@
 /*
-Theme Name: hazelnut
+Theme Name: Hazelnut
 Theme URI: https://github.com/lchord/hazelnut
 Description: 
 Author: Yuusan
@@ -548,11 +548,15 @@ blockquote p:last-of-type {
 }
 
 .post-content a {
-	color: #888
+	color: #999
 }
 
-.post-content a:hover {
-	color: #666
+.post-content a:link, .post-content a:visited{
+	color: #999 !important
+}
+
+.post-content a:hover{
+	color: #333 !important
 }
 
 #toc {
@@ -690,9 +694,12 @@ code,pre {
 	content: ' '
 }
 
-.friends a,.tagcloud>a {
+.blogroll a,.tagcloud>a {
 	display: inline-block;
 	font-size: 13px !important
+}
+.blogroll li {
+	display: inline
 }
 
 .highlight figcaption:after {
@@ -735,13 +742,18 @@ pre .javascript .function,pre .keyword {
 	color: #8959a8
 }
 
-.friends {
+.blogroll {
+	padding-left: 0;
 	margin-top: 20px
 }
 
-.friends a {
+.blogroll a {
 	margin-right: 10px;
 	color: #777
+}
+
+.blogroll a:hover {
+	color: #333
 }
 
 .tagcloud>a {
@@ -1083,4 +1095,11 @@ p, .archive-content, .post-title, #comment{
 	bottom: 0px
 }
 
+.head-404 {
+	font-size: 30px
+}
 
+.not-found {
+	padding-top: 40px;
+	text-align: center
+}

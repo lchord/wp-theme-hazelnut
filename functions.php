@@ -2,6 +2,7 @@
 
 if ( ! function_exists( 'hazelnut_setup' ) ) :
     function hazelnut_setup() {
+        add_filter( 'pre_option_link_manager_enabled', '__return_true' );
         add_theme_support( 'title-tag' );
         add_theme_support( 'html5', array(
             'search-form',
