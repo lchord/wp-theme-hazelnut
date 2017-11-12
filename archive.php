@@ -1,7 +1,7 @@
 <?php get_header();?>
 
     <section id="content">
-        <main id"main" class="archive-page">
+        <main id="main" class="archive-page">
             <header class="archive-header">
                 <?php
                 the_archive_title( '<h1 class="archive-title">', '</h1>' );

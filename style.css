@@ -808,11 +808,15 @@ pre .javascript .function,pre .keyword {
 }
 
 .page-nav .prev {
-	float: left
+	width: 45%;
+	float: left;
+	text-align: left !important;
 }
 
 .page-nav .next {
+	width: 45%;
 	float: right;
+	text-align: right !important;
 	padding-left: 20px
 }
 
@@ -1053,5 +1057,10 @@ pre .javascript .function,pre .keyword {
 }
 .posts-nav .page-numbers.dots {
 	border-color:rgba(0,0,0,0)
+}
+
+
+p, .archive-content, .post-title, #comment{
+	word-wrap:break-word
 }
 

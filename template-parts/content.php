@@ -1,4 +1,4 @@
-<article class="post block block--inset block--list<?php if(is_sticky()) echo ' sticky';?>">
+<article class="post block block-list<?php if(is_sticky()) echo ' sticky';?>">
     <header class="post-header">
     <h2 class="post-title block-title post-featured" itemprop="headline">
         <?php if( is_sticky()) : ?>
@@ -11,11 +11,11 @@
         <time><?php echo date('M j Y',get_the_time('U'));?></time>
     </div>
     </header>
-    <div class="block-snippet block-snippet--subtitle grap" itemprop="about">
+    <div class="block-snippet  grap" itemprop="about">
         <?php if(has_post_thumbnail()):?>
-            <p class="with-img"><?php the_post_thumbnail( 'full' ); ?></p>
+            <p class="img"><?php the_post_thumbnail( 'full' ); ?></p>
             <?php if( post_password_required()) : ?>
-                <?php the_content('Read More.');?>
+                <?php the_content('Read More');?>
             <?php else : ?>
                 <?php if( has_excerpt() ) : ?>
                     <p><?php the_excerpt();?></p>
