@@ -872,12 +872,12 @@ pre .javascript .function,pre .keyword {
 	position: relative
 }
 
-.comment-meta {
+.comment-metadata {
 	font-style: italic;
 	overflow: hidden;
 	font-size: 14px
 }
-.comment-meta a{
+.comment-metadata a{
 	color: rgba(0,0,0,.5);
 }
 .comment-author {
@@ -904,15 +904,18 @@ pre .javascript .function,pre .keyword {
 .admin-tag:hover{
 	color: #fff
 }
+
 .reply>a{
-	background-color: #f2f2f2;
+	background-color: #fff;
 	color: #666;
 	font-size: 12px;
 	padding: 3px 8px;
-	border-radius: 2px
+	border-radius: 2px;
+	cursor: pointer
 }
 .reply>a:hover{
-	background-color: #eee;
+	background-color: #666;
+	color: #fff
 }
 
 .comment-respond {
@@ -945,6 +948,7 @@ pre .javascript .function,pre .keyword {
 
 .comment-form .comment-form-comment textarea {
 	resize: none;
+	height: 100px;
 	width: 100%;
 	border: 1px rgba(0,0,0,.05) solid;
 	box-sizing: border-box;
