@@ -9,6 +9,6 @@ Still under construction.
 
 Todo:  
 - [ ] Search result page  
-- [ ] Archive template  
+- [x] Archive template  
 - [ ] Page template  
 - [ ] ...
