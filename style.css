@@ -866,11 +866,14 @@ pre .javascript .function,pre .keyword {
 	display: none !important
 }
 .commentlist .comment .comment-author .avatar {
-	width: 45px;
+	width: 50px;
 	float: left;
 	border-radius: 100%;
 	margin-right: 10px;
 	transition: all .5s
+}
+.commentlist .children .comment-author .avatar {
+	width: 40px;
 }
 .comment-author cite{
 	font-style: normal !important
@@ -1102,4 +1105,8 @@ p, .archive-content, .post-title, #comment{
 .not-found {
 	padding-top: 40px;
 	text-align: center
+}
+
+.widget ul {
+	padding-left: 0
 }

@@ -30,15 +30,7 @@ if (function_exists('register_sidebar')){
         'after_title' => '</h3>'
         ));
 	}
-
-function hazelnut_admin_tag($author_link){		
-    $comment = get_comment($comment_id);		
-    echo $author_link;
-    if(user_can($comment->user_id, 'administrator')){		
-        ?> <a title="Hi~" class="admin-tag">admin</a><?php		
-    }		
-}		
-add_filter('get_comment_author_link', 'hazelnut_admin_tag');    
+ 
 
 function hazelnut_javascript_detection() {
 	echo "<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>\n";
