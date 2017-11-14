@@ -870,17 +870,12 @@ pre .javascript .function,pre .keyword {
 	float: left;
 	border-radius: 100%;
 	margin-right: 10px;
-	transition: all .5s
 }
 .commentlist .children .comment-author .avatar {
 	width: 40px;
 }
 .comment-author cite{
 	font-style: normal !important
-}
-
-.commentlist .comment .comment-body:hover .comment-author .avatar {
-	transform: rotate(360deg)
 }
 
 .commentlist .children {
