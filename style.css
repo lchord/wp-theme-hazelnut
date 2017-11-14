@@ -910,6 +910,14 @@ pre .javascript .function,pre .keyword {
 	margin-top: 10px
 }
 
+.comment-content a:link, .comment-content a:visited{
+	color: #999 !important
+}
+
+.comment-content a:hover{
+	color: #333 !important
+}
+
 .reply {
 	position: absolute;
 	top: 0;
