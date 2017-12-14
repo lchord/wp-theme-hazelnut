@@ -1,5 +1,5 @@
 # hazelnut
-[Demo](https://yuusan.xyz)  
+~~[Demo](https://yuusan.xyz)~~  
 Just a simple wordpress theme.  
 Designed by [Giuem](https://www.giuem.com), rebuilt by [lchord](https://yuusan.xyz).  
 Still under construction.  
